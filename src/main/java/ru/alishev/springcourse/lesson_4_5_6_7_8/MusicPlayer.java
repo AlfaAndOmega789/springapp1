@@ -1,4 +1,4 @@
-package ru.alishev.springcourse.lesson_4_5_6_7;
+package ru.alishev.springcourse.lesson_4_5_6_7_8;
 
 import java.util.ArrayList;
 import java.util.List;
