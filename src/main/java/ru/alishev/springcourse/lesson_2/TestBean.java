@@ -1,8 +1,7 @@
-package ru.alishev.springcourse;
+package ru.alishev.springcourse.lesson_2;
 
 public class TestBean {
     private String name;
-
     public TestBean(String name){
         this.name = name;
     }

@@ -1,4 +1,4 @@
-package ru.alishev.springcourse;
+package ru.alishev.springcourse.lesson_2;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
