@@ -1,4 +1,4 @@
-package ru.alishev.springcourse.lesson_9_10_11;
+package ru.alishev.springcourse.lesson_9_10_11_12;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -15,14 +15,21 @@ public class TestSpring {
 //        MusicPlayer classicalMusicPlayer = new MusicPlayer(music2);
 //        classicalMusicPlayer.playMusic();
 
-//        MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
+        MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
 //        musicPlayer.playMusic();
 //        Computer computer = context.getBean("computer", Computer.class);
 //        System.out.println(computer);
-        MusicPlayer musicPlayer = new MusicPlayer(); //спросить , не понимаю
-        musicPlayer.playMusic(GenreMusic.CLASSICAL);
+//        MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class); //спросить , не понимаю
+//        System.out.println("musicPlayer.playMusic(GenreMusic.CLASSICAL) = " + musicPlayer.playMusic(GenreMusic.CLASSICAL));
 
+        System.out.println(musicPlayer.getName());
+        System.out.println(musicPlayer.getVolume());
 
+        ClassicalMusic classicalMusic1 = context.getBean("classicalMusic", ClassicalMusic.class);
+//        ClassicalMusic classicalMusic2 = context.getBean("classicalMusic", ClassicalMusic.class);
+//
+//        System.out.println(classicalMusic1 == classicalMusic2);
+        System.out.println(musicPlayer.playMusic());
         context.close();
     }
 }
